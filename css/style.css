@@ -1,0 +1,584 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 800;
+}
+
+/* 초기화 */
+html, body{ 
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    position: relative;
+    margin:0;
+    padding:0;
+    font-family:'Pretendard-Regular';
+    font-size:100%;
+}
+html, h1, h2, h3, h4, h5, h6, form, fieldset, img {
+    margin:0;
+    padding:0;
+    border:0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Pretendard-Regular';
+    font-size:1em;
+    word-break: keep-all;
+    white-space: pre-line;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul, dl,dt,dd {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li{
+    list-style: none;
+}
+legend {
+    position:absolute;
+    margin:0;
+    padding:0;
+    font-size:0;
+    line-height:0;
+    text-indent:-9999em;
+    overflow:hidden;
+}
+label, input, button, select, img {
+    vertical-align:middle;
+    font-size:1em;
+}
+input, button {
+    margin:0;
+    padding:0;
+    font-family:'Pretendard-Regular';
+    font-size:1em;
+}
+input[type="submit"]{cursor:pointer}
+button {cursor:pointer}
+
+textarea, select {
+    font-family:'Pretendard-Regular';
+    font-size:1em;
+}
+select {
+    margin:0
+}
+p {
+    margin:0;
+    padding:0;
+    word-break: keep-all;
+    white-space: pre-line;
+}
+hr {
+    display:none;
+}
+pre {
+    overflow-x:scroll;
+    font-size:1.1em;
+}
+a {
+    color:#000;
+    text-decoration:none;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type=text],input[type=password], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+
+input[type=text]:focus,input[type=password]:focus, textarea:focus,select:focus {
+    -webkit-box-shadow:  0 0 5px #9ed4ff;
+    -moz-box-shadow:  0 0 5px #9ed4ff;
+    box-shadow: 0 0 5px #9ed4ff;
+    border: 1px solid #558ab7 !important;
+}
+.placeholdersjs { color: #aaa !important; }
+
+.loader{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,1);
+    z-index: 9999;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.loader svg{
+    width: 100px;
+    position: absolute;
+    top: 50%; left: 50%;
+    margin: -50px 0 0 -50px;
+    color: #fff;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#jcs {
+    animation: slideInLeft 1s forwards;
+}
+  
+#mold {
+    animation: slideInRight 1s forwards;
+} 
+
+section { 
+    width: 100vw; 
+    height: 100vh; 
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+nav{
+    transition: top 0.7s ease;
+}
+
+.navbar{
+    background-color: #000;
+    border-bottom: 1px solid #555;
+}
+
+.navbar.black{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.btn-primary{
+    padding: 0.5rem 1.5rem;
+    background-color: #748A96;
+    border:1px solid #748A96;
+    border-radius: 0;
+    font-size: 0.8rem;
+}
+
+.btn-primary i{
+    margin-right: 5px;
+}
+
+.btn-primary:hover{
+    background-color: #748A96;
+    border:1px solid #748A96;
+}
+
+.btn-light{
+    padding: 0.5rem 1.5rem;
+    background:transparent;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.btn-light:hover{
+    background:#333;
+    border:1px solid #333;
+}
+
+.btn-light img{
+    margin-right: 0.5rem;
+}
+
+.btn-light p{
+    color:#fff;
+    font-size: small;
+}
+
+.nav-item a.nav-link{
+    margin: 8px 16px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.globalBtn{
+    margin-left: 30px;
+}
+
+.section01 { 
+    width: 100%; 
+    height: 100%; 
+    background-color: #555;
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+
+.pageBox.container-md{
+    position: relative;
+}
+
+.swiper-pagination {
+    position: absolute;
+    left: 50% !important;
+    transform: translateX(-50%);
+    bottom: 50px !important;
+    width: 100% !important;
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+  
+.swiper-pagination-bullet-active {
+    width: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: 1;
+}
+  
+
+.main01{
+    background:url('../img/main01.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main02{
+    background:url('../img/main02.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main03{
+    background:url('../img/main03.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mainTxt h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mainTxt p{
+    font-size: 1rem;
+}
+
+
+.section02 { 
+    background:url('../img/about.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.section02 img{
+    width: 100px;
+    height: 100px;
+}
+.section02 h3{
+    font-size: 2rem;
+}
+.section02 p{
+    font-size: 0.8rem;
+}
+
+.section03{
+    background:#000;
+}
+
+.section03 .container-xxl{
+    margin-top: 50px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title h3{
+    margin-bottom: 5px;
+    font-family: 'Pretendard-Medium';
+    font-size: 1.2rem;
+}
+
+.title p{
+    font-size: 0.8rem;
+}
+
+.ceoPic{
+    position:relative;
+    width:100%;
+    padding: 20% 0;
+    background:url('../img/jcs_back.png') no-repeat;
+    background-position: left bottom;
+    background-size: 60%;
+    background-color: #f6f6f6;
+}
+
+.ceoPic img{
+    width: 35%;
+    position:absolute;
+    left: 5%;
+    bottom:0;
+}
+
+.ceoInfo{
+    position:absolute;
+    right: 5%;
+    bottom: 5%;
+    color: #000;
+}
+
+.ceoInfo > p {
+    color:#748A96;
+    font-family: 'Pretendard-Bold';
+    font-size: 0.8rem;
+}
+
+.ceoInfo .ceoName h4{
+    font-family: 'Pretendard-Bold';
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+.ceoInfo .ceoName p{
+    font-size: 1rem;
+}
+
+.ceoMent p{
+    font-size: 0.8rem;
+}
+
+.ceoMent div h2{
+    font-family: 'Pretendard-Medium';
+}
+
+.section04{
+    background:url('../img/history.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.section04 .title{
+    margin-bottom: 1rem;
+}
+.graph div img{
+    width: 10px;
+    height: 80px;
+    margin: 0 0.5rem;
+}
+
+.graph div:last-child img{
+    width: 10px;
+    height: 90px;
+}
+
+.graph div h3{
+    width: 70px;
+    text-align: right;
+}
+.graph div p{
+    width: 200px;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.section05{
+    background:#fff;
+}
+
+.titBox{
+    width:100%;
+}
+
+.section05 .title{
+    margin-bottom: 1rem;
+}
+
+.section05 .picBox{
+    width:100%;
+    height:100%;
+    background:url('../img/factory_back.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.list-group{
+    width: 350px;
+    border: none;
+}
+.list-group-item{
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border:none;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.list-group-item.active{
+    background-color: #fff;
+    color:#748A96;
+    border:none;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #748A96;
+    font-family: 'Pretendard-Bold';
+}
+
+.list-group-item:first-child.active{
+    border-top:none;
+}
+
+.tabArea{
+    width: 100%;
+    height: 100%;
+}
+
+.tabArea .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.tabArea .swiper-slide {
+    width:100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabArea .swiper-slide:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.tabArea .swiper-slide .imgContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.section06{
+    background: #000;
+}
+
+.visionFlex{
+    width:100%;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.visionFlex img{
+    width: 30%;
+    height: 30%;
+    margin-right: 10px;
+}
+
+.visionBox{
+    width:80%;
+}
+
+.visionBox .visionTit {
+    width:100%;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+.visionBox .visionTit h6{
+    margin-bottom: 0.25rem;
+    font-family: 'Pretendard-Medium';
+    font-size: 1.2rem;
+}
+
+.visionBox .visionTit p{
+    font-size: 0.8rem;
+}
+
+.visionBox .visionSub {
+    width:100%;
+    padding: 1rem 0;
+}
+
+.visionBox .visionSub p{
+    font-size: 0.8rem;
+}
+
+.section07{
+    background-color: #fff;
+}
+
+.locationInfo{
+    font-size: 0.8rem;
+}
+
+.footer{
+    background-color: #000;
+    font-size: 0.6rem;
+}

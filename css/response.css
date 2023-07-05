@@ -1,0 +1,192 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .ceoPic{
+        padding: 15% 0;
+        background-size: 40%;
+    }
+    .ceoPic img{
+        width: 26%;
+        left: 37%;
+    }
+    .ceoMent p{
+        font-size: 1rem;
+    }
+    .section02 p{
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .navbar-brand img{
+        width: 75px;
+        height: 50px;
+    }
+    .section02 .container-xxl{
+        margin-top: -50px;
+    }
+    .navbar{
+        background: transparent;
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
+    .btnLang{
+        margin-left: 20px;
+    }
+    .nav-item a.nav-link{
+        margin: 0px 8px;
+    }
+    .mainTxt h3{
+        font-size: 3rem;
+    }
+    
+    .mainTxt p{
+        font-size: 1.2rem;
+    }
+    .section02 img{
+        width: 100px;
+        height: 100px;
+    }    
+    .section03 .container-xxl{
+        margin-top: 100px;
+    }
+    .title{
+        margin-bottom: 3rem;
+    }
+    .title h3{
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+    .ceoInfo .ceoName h4{
+        font-size: 2.5rem;
+    }
+    
+    .ceoInfo .ceoName p{
+        font-size: 1.5rem;
+    }
+    .locationInfo{
+        font-size: 1rem;
+    }
+    .footer{
+        font-size: 0.8rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .loader svg{
+        width: 200px;
+        margin: -100px 0 0 -100px;
+    }
+    .nav-item a.nav-link{
+        margin: 0px 16px;
+    }
+    .mainTxt h3{
+        font-size: 4rem;
+    }
+    .mainTxt p{
+        font-size: 1.5rem;
+    }
+    .section02 img{
+        width: 150px;
+        height: 150px;
+    }
+    .title h3{
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    }
+    
+    .title p{
+        font-size: 1.2rem;
+    }
+    .section04 .title{
+        text-align: left;
+    }
+    .graph div p{
+        width: 250px;
+    }
+    .section05 .title{
+        margin-bottom: 2rem;
+    }
+    .titBox{
+        width: 50%;
+    }
+    .list-group-item{
+        padding: 1rem;
+    }
+    .section05 .picBox{
+        width: 50%;
+    }
+    .list-group-item{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .visionBox{
+        width:100%;
+    }
+
+    .visionBox .visionTit {
+        padding: 2rem 1rem;
+    }
+    
+    .visionBox .visionTit h6{
+        margin-bottom: 0.25rem;
+        font-size: 1.5rem;
+    }
+    
+    .visionBox .visionTit p{
+        font-size: 0.9rem;
+    }
+    
+    .visionBox .visionSub {
+        padding: 2rem 0;
+        min-height: 136px;
+        
+    }
+    .visionBox .visionSub p{
+        font-size: 1rem;
+    }
+    .visionFlex img{
+        width: 100%;
+    }
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .section02 .container-xxl{
+        margin-top: -100px;
+    }
+    .graph div img{
+        width: 15px;
+        height: 120px;
+    }
+
+    .graph div:last-child img{
+        width: 15px;
+        height: 135px;
+    }
+
+    .graph div h3{
+        width: 70px;
+    }
+    .graph div p{
+        width: 300px;
+        font-size: 1rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .section02 img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .section02 h3{
+        font-size: 2.5rem;
+    }
+    
+    .section02 p{
+        font-size: 1.2rem;
+    }
+}

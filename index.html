@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>JCS MOLD 제이씨에스 몰드</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/response.css" type="text/css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:url" content="https://pclbp99.github.io/jcsmoldSample/"/>
+    <meta property="og:title" content="JCS 몰드"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://pclbp99.github.io/jcsmoldSample/img/kakao.jpg"/>
+    <meta property="og:description" content="JCS 몰드와 함께하는 미래와 세상을 만들겠습니다"/>
+
+</head>   
+
+<body>
+    <div class="loader">
+        <svg id="loadingLogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.95 95.8">
+            <g id="jcs">
+              <path id="_path_1" data-name="path 1" d="M4.23,61.85H0v-2.47H4.23c2.57,0,5.11-.53,7.46-1.58,2.29-1,4.36-2.45,6.1-4.24,1.75-1.84,3.13-3.99,4.07-6.34,1.01-2.44,1.52-5.06,1.51-7.7V2.47h2.47V39.52c.01,2.97-.57,5.91-1.7,8.66-1.07,2.65-2.63,5.07-4.6,7.13-1.97,2.03-4.32,3.65-6.91,4.78-2.64,1.17-5.51,1.78-8.4,1.77m0-4.95H0v-2.47H4.23c3.82,.05,7.48-1.54,10.05-4.36,2.73-2.83,4.22-6.62,4.14-10.55V2.47h2.47V39.52c.02,3.05-.74,6.05-2.22,8.71-1.42,2.61-3.52,4.8-6.06,6.34-2.52,1.55-5.43,2.36-8.39,2.34m0-4.95H0v-2.47H4.23c2.5,.03,4.89-1.04,6.55-2.92,1.78-1.91,2.75-4.43,2.7-7.04V2.47h2.47V39.52c.06,3.27-1.16,6.43-3.42,8.8-2.11,2.35-5.14,3.68-8.3,3.64m0-4.95H0v-2.48H4.23c1.17,.02,2.29-.48,3.06-1.37,.86-1.01,1.3-2.32,1.24-3.64V2.47h2.47V39.52c.07,1.98-.63,3.91-1.96,5.38-1.22,1.37-2.98,2.14-4.81,2.11" style="fill: #fff;"/>
+              <path id="_path_2" data-name="path 2" d="M92.66,13.54l-2.06,1.34c-2.59-3.8-6.06-6.92-10.12-9.07-7.56-4.03-16.54-4.43-24.43-1.08-6.87,2.84-12.32,8.29-15.15,15.15-3,7.06-3,15.04,0,22.09,2.84,6.87,8.29,12.32,15.15,15.15,7.9,3.35,16.89,2.94,24.45-1.12,4.07-2.17,7.54-5.3,10.14-9.11l1.99,1.51c-2.82,4.11-6.59,7.47-11,9.81-8.22,4.39-17.97,4.82-26.55,1.18-7.45-3.09-13.37-9.01-16.46-16.46-3.28-7.67-3.28-16.35,0-24.02,3.09-7.45,9.01-13.37,16.46-16.46,8.58-3.65,18.36-3.22,26.58,1.18,4.41,2.36,8.19,5.76,11,9.9m-4.05,2.82l-2.07,1.34c-2.14-3.15-5.01-5.72-8.37-7.51-6.26-3.34-13.69-3.67-20.22-.91-5.67,2.33-10.18,6.83-12.51,12.5-2.47,5.84-2.47,12.44,0,18.28,2.33,5.67,6.83,10.18,12.51,12.51,2.89,1.23,6,1.87,9.14,1.86,3.88,.03,7.7-.93,11.1-2.78,3.35-1.8,6.22-4.38,8.35-7.53l1.99,1.48c-2.36,3.46-5.53,6.3-9.23,8.26-7.93,4.21-17.47,4.04-25.24-.45-3.93-2.27-7.2-5.54-9.47-9.47-2.31-3.95-3.52-8.45-3.49-13.02-.03-4.58,1.17-9.08,3.49-13.03,2.27-3.93,5.54-7.2,9.47-9.47,7.79-4.5,17.36-4.65,25.29-.41,3.71,1.99,6.89,4.85,9.25,8.34m-4.12,2.75l-2.06,1.34c-1.69-2.47-3.94-4.49-6.58-5.89-5.67-3.02-12.49-2.9-18.06,.31-2.8,1.62-5.13,3.95-6.75,6.75-3.32,5.76-3.32,12.86,0,18.62,1.62,2.8,3.95,5.13,6.75,6.75,5.57,3.21,12.4,3.32,18.07,.29,2.65-1.42,4.91-3.46,6.6-5.94l2.03,1.41c-1.9,2.82-4.47,5.13-7.48,6.73-6.42,3.42-14.16,3.29-20.46-.34-3.19-1.83-5.83-4.48-7.66-7.66-3.76-6.53-3.76-14.57,0-21.1,1.83-3.19,4.48-5.83,7.66-7.66,6.31-3.63,14.04-3.76,20.46-.34,3,1.6,5.57,3.91,7.47,6.74m-4.09,2.82l-2.03,1.34c-2.53-3.74-6.76-5.97-11.27-5.94-7.51,0-13.6,6.09-13.61,13.61,0,7.51,6.09,13.61,13.61,13.61,2.25,.02,4.47-.54,6.44-1.62,1.94-1.04,3.6-2.54,4.83-4.36l1.99,1.44c-1.46,2.14-3.41,3.9-5.7,5.12-4.27,2.28-9.34,2.51-13.8,.62-3.88-1.61-6.96-4.69-8.57-8.57-1.69-3.99-1.69-8.49,0-12.47,1.61-3.88,4.7-6.96,8.57-8.57,4.47-1.9,9.56-1.66,13.83,.64,2.29,1.23,4.25,3.01,5.7,5.17" style="fill: #fff;"/>
+              <path id="_path_3" data-name="path 3" d="M125.67,24.74h-4.16c-1.41,.13-2.81-.36-3.82-1.36-.82-1.01-1.23-2.29-1.17-3.59,0-3.3,2.46-4.95,7.39-4.95,4.63,0,8.11,.69,10.45,2.06l-1.99,1.51c-1.6-.73-4.42-1.1-8.45-1.1-1.36-.12-2.72,.11-3.97,.65-.64,.38-1.03,1.08-1.01,1.82-.04,.65,.16,1.3,.55,1.82,.55,.5,1.29,.74,2.03,.65h4.26c2.87-.04,5.71,.49,8.37,1.58,2.35,.95,4.44,2.43,6.13,4.31,1.62,1.84,2.86,3.98,3.68,6.29,.86,2.44,1.29,5.02,1.27,7.61,.01,2.12-.3,4.23-.93,6.25-.61,1.96-1.56,3.79-2.8,5.43-1.26,1.66-2.78,3.1-4.5,4.28-1.92,1.28-4.03,2.23-6.25,2.82-2.56,.7-5.2,1.04-7.85,1.01-4.22,.03-8.42-.65-12.42-2.01-3.57-1.17-6.86-3.09-9.64-5.62l1.99-1.48c2.55,2.23,5.54,3.9,8.78,4.9,3.65,1.18,7.46,1.76,11.29,1.74,2.89,.04,5.77-.42,8.5-1.36,2.33-.78,4.46-2.05,6.25-3.73,1.62-1.56,2.91-3.43,3.78-5.5,.89-2.13,1.34-4.42,1.32-6.74,.04-2.99-.62-5.95-1.93-8.64-1.31-2.61-3.35-4.79-5.86-6.27-2.81-1.65-6.03-2.49-9.29-2.41m-4.16,12.37h3.78c1.41-.13,2.81,.37,3.81,1.38,.81,1.01,1.23,2.28,1.17,3.57,0,3.3-2.46,4.95-7.39,4.95-4.65,0-8.14-.69-10.48-2.06l1.99-1.51c1.6,.73,4.43,1.1,8.49,1.1,1.36,.12,2.72-.11,3.97-.65,.64-.38,1.03-1.07,1.01-1.82,.03-.65-.17-1.29-.57-1.8-.56-.51-1.32-.76-2.08-.67h-3.71c-2.93,.04-5.84-.48-8.57-1.55-2.39-.92-4.55-2.38-6.29-4.26-1.65-1.83-2.93-3.97-3.76-6.29-.89-2.47-1.33-5.08-1.31-7.7-.01-2.12,.3-4.23,.93-6.25,.61-1.96,1.56-3.8,2.8-5.43,1.26-1.66,2.78-3.1,4.5-4.28,1.92-1.28,4.03-2.23,6.25-2.82C118.62,.32,121.27-.02,123.92,0c4.22-.03,8.41,.65,12.41,2.01,3.57,1.17,6.85,3.09,9.62,5.62l-1.99,1.48c-2.55-2.23-5.53-3.9-8.76-4.9-3.64-1.18-7.44-1.76-11.27-1.73-2.89-.04-5.77,.42-8.5,1.36-2.33,.78-4.46,2.05-6.25,3.73-1.62,1.56-2.91,3.43-3.78,5.5-.89,2.13-1.34,4.42-1.32,6.74-.05,3.02,.62,6.01,1.96,8.73,1.34,2.62,3.42,4.79,5.98,6.24,2.9,1.63,6.19,2.44,9.52,2.35m0-9.9h3.92c4.65,0,8.29,1.42,10.91,4.26,2.64,2.88,4.05,6.68,3.93,10.58,.1,4.04-1.57,7.93-4.57,10.64-3.05,2.81-7.32,4.21-12.82,4.21-3.48,.03-6.95-.48-10.28-1.51-2.91-.86-5.61-2.31-7.94-4.26l1.93-1.55c2.11,1.65,4.52,2.87,7.1,3.57,2.99,.87,6.08,1.3,9.19,1.27,4.83,0,8.53-1.16,11.08-3.47,2.53-2.25,3.93-5.51,3.83-8.9,.11-3.26-1.04-6.44-3.21-8.87-2.14-2.33-5.21-3.5-9.19-3.5h-3.89c-3.34,0-5.85-.92-7.53-2.75-1.72-1.97-2.62-4.53-2.51-7.15-.09-2.73,1.05-5.35,3.11-7.15,2.07-1.84,5.18-2.75,9.33-2.75,2.74-.02,5.46,.32,8.11,1.01,2.23,.55,4.33,1.53,6.18,2.9l-1.96,1.51c-2.87-1.97-6.98-2.96-12.34-2.95-3.46,0-5.98,.68-7.58,2.05-1.58,1.33-2.46,3.31-2.38,5.38-.1,1.96,.53,3.88,1.77,5.4,1.18,1.35,3.11,2.03,5.79,2.03m0,4.95h3.78c3.34,0,5.85,.93,7.53,2.78,1.71,1.96,2.61,4.51,2.51,7.11,.09,2.73-1.05,5.35-3.11,7.15-2.07,1.83-5.18,2.75-9.33,2.75-2.74,.02-5.47-.32-8.13-1.01-2.24-.55-4.35-1.53-6.2-2.9l1.96-1.51c2.87,1.97,6.99,2.96,12.37,2.96,3.46,0,5.98-.68,7.58-2.05,1.58-1.33,2.46-3.32,2.38-5.38,.09-1.95-.55-3.87-1.79-5.38-1.19-1.36-3.13-2.05-5.81-2.05h-3.74c-4.7,0-8.37-1.4-11.01-4.21-2.67-2.88-4.1-6.71-3.97-10.64-.1-4.04,1.57-7.93,4.57-10.64,3.05-2.81,7.32-4.21,12.82-4.21,3.48-.03,6.94,.48,10.26,1.51,2.9,.86,5.6,2.31,7.92,4.26l-1.93,1.55c-2.1-1.65-4.51-2.86-7.08-3.57-2.98-.87-6.07-1.3-9.18-1.27-4.83,0-8.53,1.16-11.08,3.47-2.53,2.25-3.93,5.51-3.83,8.9-.12,3.27,1.04,6.46,3.23,8.88,2.15,2.32,5.25,3.49,9.28,3.49" style="fill: #fff;"/>
+            </g>
+            <g id="mold">
+              <path id="_path_4" data-name="path 4" d="M12.7,74.75l-3.72,11.77-3.74-11.77H1.13l-.17,17.05h3.05l.12-11.33,3.13,9.64h3.43l3.13-9.64,.11,11.33h3.05l-.17-17.05h-4.11Z" style="fill: #fff;"/>
+              <path id="_path_5" data-name="path 5" d="M26.34,74.46c-1.72-.14-3.43,.4-4.77,1.5-1.09,1.13-1.66,2.67-1.57,4.24v6.18c-.09,1.57,.48,3.1,1.57,4.23,1.34,1.1,3.05,1.64,4.77,1.5,1.72,.14,3.43-.4,4.77-1.5,1.09-1.13,1.66-2.66,1.56-4.23v-6.18c.09-1.57-.47-3.1-1.56-4.23-1.34-1.1-3.05-1.64-4.77-1.5m-3.23,5.48c-.06-.78,.22-1.56,.78-2.11,.7-.53,1.57-.79,2.45-.72,.88-.07,1.75,.19,2.45,.73,.56,.56,.84,1.34,.78,2.13v6.62c.06,.79-.22,1.57-.78,2.13-.7,.54-1.57,.8-2.45,.73-.88,.07-1.75-.19-2.44-.73-.56-.56-.85-1.34-.78-2.13v-6.65Z" style="fill: #fff;"/>
+              <path id="_path_6" data-name="path 6" d="M38.94,74.75h-3.11v17.05h10.19v-2.65h-7.08v-14.4Z" style="fill: #fff;"/>
+              <path id="_path_7" data-name="path 7" d="M53.47,74.46c-1.68,0-3.36,.03-5,.1l-.38,.02v17.36l.37,.02c1.69,.1,3.33,.15,4.87,.15,1.95,.13,3.89-.49,5.4-1.73,1.31-1.3,1.99-3.1,1.88-4.94v-4.07c.12-1.89-.56-3.75-1.88-5.11-1.46-1.26-3.35-1.9-5.27-1.78m-2.28,2.62c.93-.03,1.65-.04,2.14-.04,1.13-.07,2.24,.3,3.1,1.04,.78,.85,1.17,1.98,1.08,3.13v4.39c.08,1.08-.33,2.14-1.1,2.89-.86,.71-1.96,1.07-3.08,1.01-.53,0-1.25-.04-2.14-.12v-12.31Z" style="fill: #fff;"/>
+              <path id="_path_8" data-name="path 8" d="M72.13,78.92c.27-.52,.68-.96,1.19-1.25,1-.55,2.19-.6,3.24-.14,.46,.2,.87,.5,1.21,.87,.33,.36,.58,.8,.73,1.27l.07,.21h3.21l-.08-.36c-.2-.99-.63-1.92-1.26-2.72-.62-.78-1.41-1.4-2.31-1.82-.94-.43-1.97-.65-3.01-.64-1.21-.02-2.4,.25-3.47,.81-.99,.52-1.8,1.32-2.35,2.29-.57,1.04-.85,2.21-.83,3.4v4.55c-.02,1.19,.26,2.36,.83,3.4,.54,.97,1.36,1.77,2.35,2.29,1.07,.55,2.26,.82,3.47,.8,1.03,0,2.06-.21,3-.64,.9-.41,1.7-1.04,2.31-1.81,.63-.79,1.06-1.72,1.26-2.72l.08-.37h-3.23l-.06,.22c-.14,.49-.38,.94-.73,1.32-.33,.36-.74,.65-1.2,.84-.46,.19-.95,.29-1.44,.28-.63,.01-1.25-.14-1.8-.44-.51-.29-.92-.73-1.19-1.25-.3-.59-.44-1.25-.43-1.92v-4.55c-.01-.67,.13-1.33,.43-1.92" style="fill: #fff;"/>
+              <path id="_path_9" data-name="path 9" d="M89.21,78.6c-1.42-.11-2.82,.36-3.89,1.29-.91,.98-1.38,2.29-1.3,3.62v3.67c-.08,1.33,.39,2.64,1.3,3.62,1.07,.93,2.47,1.4,3.89,1.29,1.42,.11,2.82-.36,3.89-1.29,.91-.98,1.38-2.28,1.3-3.62v-3.67c.08-1.33-.39-2.64-1.3-3.62-1.07-.93-2.47-1.4-3.89-1.29m-2.08,4.74c-.04-.59,.15-1.18,.54-1.63,.42-.39,.97-.59,1.54-.55,.57-.04,1.13,.16,1.54,.54,.39,.45,.58,1.03,.54,1.62v4.05c.04,.6-.15,1.18-.54,1.64-.9,.73-2.19,.73-3.09,0-.39-.45-.58-1.04-.54-1.64v-4.02Z" style="fill: #fff;"/>
+              <path id="_path_10" data-name="path 10" d="M98.39,88.28c-.48-.03-.96,.11-1.37,.38-.37,.28-.57,.72-.55,1.19v.72c-.02,.45,.19,.89,.55,1.16,.4,.27,.88,.4,1.37,.38,.5,.03,.99-.1,1.4-.38,.36-.27,.57-.71,.55-1.16v-.72c0-.47-.19-1.56-1.95-1.56" style="fill: #fff;"/>
+              <path id="_path_11" data-name="path 11" d="M105.79,88.65h0c-.4-.26-.88-.39-1.35-.36-.47-.03-.94,.1-1.33,.36-.36,.27-.56,.7-.54,1.15v.74c-.03,.59,.32,1.13,.87,1.33l-1.01,3.93h2.43l1.26-3.81c.15-.45,.22-.92,.21-1.4v-.79c.02-.45-.18-.88-.54-1.15" style="fill: #fff;"/>
+              <path id="_path_12" data-name="path 12" d="M117.09,74.75h-3.11v17.05h10.19v-2.65h-7.08v-14.4Z" style="fill: #fff;"/>
+              <path id="_path_13" data-name="path 13" d="M132.85,89.26h0c-.7,.16-1.42,.24-2.15,.24-.61,.14-1.21-.24-1.35-.85-.04-.17-.04-.34,0-.51v-6.7h3.54v-2.53h-3.54v-3.23h-2.62l-.44,3.23h-1.96v2.53h1.91v6.53c-.1,1.17,.31,2.32,1.13,3.16,.99,.73,2.21,1.08,3.43,.98,.77-.01,1.53-.12,2.28-.31l.31-.08-.08-2.56-.47,.11Z" style="fill: #fff;"/>
+              <path id="_path_14" data-name="path 14" d="M141.88,74.06v5.45c-.34-.2-.7-.37-1.06-.52-.57-.25-1.19-.38-1.81-.39-1.17-.07-2.32,.38-3.14,1.22-.77,.93-1.17,2.11-1.1,3.32v4.42c-.08,1.2,.27,2.38,.99,3.35,.73,.82,1.8,1.26,2.89,1.19,1.28-.03,2.49-.59,3.34-1.56v1.26h3v-17.74h-3.11Zm-4,9.38c-.05-.59,.11-1.18,.44-1.67,.3-.34,.75-.53,1.21-.49,.43,.02,.85,.12,1.24,.31,.4,.18,.78,.42,1.11,.71v5.17c-.34,.56-.78,1.05-1.29,1.44-.4,.31-.88,.49-1.39,.51-.61,0-1.32-.24-1.32-2.14v-3.85Z" style="fill: #fff;"/>
+            </g>
+        </svg>
+    </div>
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-md fixed-top bg-none p-1 p-md-3 text-white">
+        <div class="container-xxl">
+            <a class="navbar-brand scroll-link" href="#" data-scroll-target="#sec01">
+                <img src="img/logo.png" width="60" height="40" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end mt-3 mb-3" id="navbarNav">
+                <ul class="navbar-nav mr-auto mt-md-0 mb-3 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white scroll-link" href="#" data-scroll-target="#sec02">회사소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white scroll-link" href="#" data-scroll-target="#sec03">인사말</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white scroll-link" href="#" data-scroll-target="#sec04">연혁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white scroll-link" href="#" data-scroll-target="#sec05">공장/장비</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white scroll-link" href="#" data-scroll-target="#sec06">비전</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white scroll-link" href="#" data-scroll-target="#sec07">오시는길</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-end globalBtn">
+                    <button type="button" class="btn btn-light d-flex align-items-center">
+                        <img src="img/ic_global.png" width="16" height="16" alt="">
+                        <p>English</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Slide Banner -->
+    <section id="sec01" class="section01 container-fluid p-0">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide main01">
+                <div class="container-md">
+                    <div class="mainTxt text-white">
+                        <h3>Forward the
+                            Future & World with JCS Mold</h3>
+                        <p>JCS 몰드와 함께하는
+                            미래와 세상을 만들겠습니다</p>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide main02">
+                <div class="container-md">
+                    <div class="mainTxt text-white">
+                        <h3>Forward the
+                            Future & World with JCS Mold</h3>
+                        <p>JCS 몰드와 함께하는
+                            미래와 세상을 만들겠습니다</p>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide main03">
+                <div class="container-md">
+                    <div class="mainTxt text-white">
+                        <h3>Forward the
+                            Future & World with JCS Mold</h3>
+                        <p>JCS 몰드와 함께하는
+                            미래와 세상을 만들겠습니다</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="pageBox container-md">
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+           var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                resizeObserver: true,
+                autoplay:{
+                    delay: 5000,
+                },
+                loop:true,
+            }); 
+        </script>
+    </section>
+
+    <!-- About JCS -->
+    <section id="sec02" class="section02 container-fluid p-0">
+        <div class="container-xxl text-white">
+            <img src="img/about_logo.png" class="mb-2 mb-lg-4">
+            <h3 class="mb-4 mb-lg-5">세계시장 개척을 위해 전진합니다</h3>
+            <p>2001년 엔지니어 출신 전진오 대표의 1인 기업으로 설립된 JCS 몰드는 휴대폰 케이스 등의 중·소형 정밀 금형 제작 및 사출 전문 업체로 시작했습니다. 
+                사업 초기부터 국내 대기업의 협력 업체로 등록되어 휴대폰, 자동차 부품, 카메라 부품 등에서 이름을 알렸습니다. 
+                
+                2016년, 추가적으로 제이씨에스 인터내셔날 법인을 설립하였고, 창업 이후 17년이 지난 오늘, 자체 개발·생산품으로 수출 1000만 달러를 앞두고 있습니다. 
+                
+                우리의 목표는 여기서 끝이 아닙니다. 
+                세계 시장에서 인정받는 회사가 되기 위해, 오늘도 저희는 앞만 보고 달리고 있습니다.</p>
+        </div>
+    </section>
+
+    <!-- CEO Greeting -->
+    <section id="sec03" class="section03 container-fluid p-0">
+        <div class="container-xxl text-white">
+            <div class="title">
+                <h3>CEO Greeting</h3>
+                <p>인사말</p>
+            </div>
+            <div class="ceoPic">
+                <img src="img/ceo_img.png" alt=""/>
+                <div class="ceoInfo">
+                    <p>JCS MOLD CEO</p>
+                    <div class="ceoName d-flex align-items-center">
+                        <h4>전진오</h4>
+                        <p>대표</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ceoMent d-md-flex pt-3 pt-md-5">
+                <div class="w-100 w-md-50 d-flex align-items-center justify-content-center p-3 p-md-5">
+                    <h2 class="fs-3">품질제일! 고객중심! 윤리경영!</h2>
+                </div>
+                <div class="w-100 w-md-50 text-center text-md-start">
+                    <p>JCS MOLD는 품질제일! 고객중심! 윤리경영! 이 세가지를 슬로건으로 내걸고 휴대폰 금형, 인서트 사출 등 중소형 정밀금형 제작 및 사출을 전문으로 하는 회사입니다. 
+                        2001년 삼성전자와 협력업체 체결을 모티브로 하여 고속가공기 등 최상의 설비와 최고의 정밀금형 제작기술을 갖추고 있습니다.
+                        사원 대부분이 자사에서 오랜기간 숙련된 기술자로 구성되어 있고 모두가 가족처럼 한마음으로 일하며 고객의 주문과 품질에 최선을 다하고 있습니다.
+                        어떤 어려움이 있어도 앞으로 계속 더욱 더 발전하는 회사로 거듭 나겠으며, 관심과 성원으로 지켜봐 주시기 바랍니다.
+                        감사합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History -->
+    <section id="sec04" class="section04 container-fluid p-0">
+        <div class="container-xxl text-white d-lg-flex justify-content-between align-items-center">
+            <div class="title">
+                <h3>HISTORY</h3>
+                <p>연혁</p>
+            </div>
+            <div class="graph">
+                <div class="d-flex align-items-center justify-content-center">
+                    <h3 class="fs-3 m-lg-3">2016</h3>
+                    <img src="img/history_bar.png" alt=""/>
+                    <p class="m-lg-3"><b>1월</b> 제이씨에스 인터내셔날 법인 설립
+                    <b>4월</b> 안경테 브랜드 "CLROTTE" 론칭</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <h3 class="fs-3 m-lg-3">2013</h3>
+                    <img src="img/history_bar.png" alt=""/>
+                    <p class="m-lg-3"><b>8월</b> 구미 사업장 신축 이전</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <h3 class="fs-3 m-lg-3">2009</h3>
+                    <img src="img/history_bar.png" alt=""/>
+                    <p class="m-lg-3"><b>4월</b> 기술 혁신형 중소기업 (INNO_BIZ) 선정
+                    <b>6월</b> 벤처 기업 (기술 보증 기금) 선정칭</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <h3 class="fs-3 m-lg-3">2007</h3>
+                    <img src="img/history_bar.png" alt=""/>
+                    <p class="m-lg-3"><b>5월</b> ISO9001/14001 인증
+                    <b>10월</b> 기업 부설 연구소 설립</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <h3 class="fs-3 m-lg-3">2006</h3>
+                    <img src="img/history_bar.png" alt=""/>
+                    <p class="m-lg-3"><b>10월</b> 사출 사업부 신설</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <h3 class="fs-3 m-lg-3">2005</h3>
+                    <img src="img/history_bar.png" alt=""/>
+                    <p class="m-lg-3"><b>7월</b> (주)쉘라인 1차 협력업체 등록
+                    <b>12월</b> JCS MOLD로 사업자 변경</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-center">
+                    <h3 class="fs-3 m-lg-3">2001</h3>
+                    <img src="img/history_bar2.png" alt=""/>
+                    <p class="m-lg-3"><b>9월</b> JCS TECH 설립
+                    <b>10월</b> 삼성전자 1차 협력업체 등록</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Factory -->
+    <section id="sec05" class="section05 container-fluid p-0">
+        <div class="w-100 h-100 d-lg-flex">
+            <div class="titBox d-flex flex-column justify-content-center align-items-center p-3 p-lg-5">
+                <div class="title mt-5 mt-lg-0">
+                    <h3>FACTORY</h3>
+                    <p>공장 장비 및 제품</p>
+                </div>
+                <div class="list-group">
+                    <a href="#sec05" rel="tab01" class="list-group-item list-group-item-action d-flex justify-content-between"><p>금형 가공 공장</p><i class="bi bi-arrow-right"></i></a>
+                    <a href="#sec05" rel="tab02" class="list-group-item list-group-item-action d-flex justify-content-between"><p>CNC 가공 장비</p><i class="bi bi-arrow-right"></i></a>
+                    <a href="#sec05" rel="tab03" class="list-group-item list-group-item-action d-flex justify-content-between"><p>사출 생산 공장</p><i class="bi bi-arrow-right"></i></a>
+                    <a href="#sec05" rel="tab04" class="list-group-item list-group-item-action d-flex justify-content-between"><p>사출 생산 장비</p><i class="bi bi-arrow-right"></i></a>
+                    <a href="#sec05" rel="tab05" class="list-group-item list-group-item-action d-flex justify-content-between"><p>금형 제품</p><i class="bi bi-arrow-right"></i></a>
+                    <a href="#sec05" rel="tab06" class="list-group-item list-group-item-action d-flex justify-content-between"><p>사출 제품</p><i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="picBox">
+                <div class="tabArea">
+                    <!-- 각 슬라이드 -->
+                    <div class="swiper slideTab01 slideCom" id="tab01">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab1_01.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab1_02.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab1_03.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab1_04.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab1_05.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab1_06.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab1_08.png" alt=""></div></div>
+                        </div>
+                    </div>
+                    <!-- 각 슬라이드 -->
+                    <div class="swiper slideTab02 slideCom" id="tab02">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab2_01.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab2_02.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab2_03.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab2_04.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab2_05.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab2_06.png" alt=""></div></div>
+                            <div class="swiper-slide"><div class="imgContainer"><img src="img/tab2_07.png" alt=""></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var swiper = new Swiper(".slideTab01", {});
+                var swiper = new Swiper(".slideTab02", {});
+            </script>
+        </div>
+    </section>
+
+    <!-- Vision -->
+    <section id="sec06" class="section06 container-fluid p-0">
+        <div class="container-xxl text-white">
+            <div class="title mt-5 mt-lg-0">
+                <h3>VISION</h3>
+                <p>금형 산업의 혁신적인 글로벌 리더</p>
+            </div>
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                <div class="visionFlex d-flex d-lg-block justify-content-center align-items-center mb-3 mg-lg-0">
+                    <img src="img/vision01.jpg" alt=""/>
+                    <div class="visionBox">
+                        <div class="visionTit">
+                            <h6>Improve Brand Royalty</h6>
+                            <p>고객 충성도 향상</p>
+                        </div>
+                        <div class="visionSub">
+                            <p>우리 제품을 이용하는 고객들이 신뢰할 수 있도록 끊임없이 노력하겠습니다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="visionFlex d-flex d-lg-block justify-content-center align-items-center mb-3 mg-lg-0">
+                    <img src="img/vision02.jpg" alt=""/>
+                    <div class="visionBox">
+                        <div class="visionTit">
+                            <h6>Localization</h6>
+                            <p>지역별 제품군 형성</p>
+                        </div>
+                        <div class="visionSub">
+                            <p>특정 지역에서 선호하는 제품군을 형성하여 지속적이고 효율적인 관리가 가능하도록 하겠습니다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="visionFlex d-flex d-lg-block justify-content-center align-items-center mb-3 mg-lg-0">
+                    <img src="img/vision03.jpg" alt=""/>
+                    <div class="visionBox">
+                        <div class="visionTit">
+                            <h6>Higher Preference</h6>
+                            <p>경쟁사 대비 구매 선호도 우위 확보</p>
+                        </div>
+                        <div class="visionSub">
+                            <p>동일 제품을 취급하는 경쟁사에 대비하여 선호도의 우위를 확보할 수 있도록 발전하겠습니다</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="sec07" class="section07 container-fluid p-0">
+        <div class="container-xxl">
+            <div class="title">
+                <h3>LOCATION</h3>
+                <p>오시는 길</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.9732211774667!2d128.38584657720475!3d36.09414080717918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565c1436317f48d%3A0xddfe731e4d0fe0b1!2z6rK97IOB67aB64-EIOq1rOuvuOyLnCDsgrDtmLjrjIDroZwgMTE2LTI3!5e0!3m2!1sko!2skr!4v1688460253983!5m2!1sko!2skr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="d-md-flex mt-2 mt-md-3">
+                <div class="d-none d-md-block">
+                    <img src="img/jcsmold.jpg" class="w-100" alt=""/>
+                </div>
+                <div class="locationInfo w-100 w-md-50 p-3 p-md-4 d-flex flex-column justify-content-center">
+                    <p class="fw-bold">주소</p>
+                    <p class="mb-2 mb-md-3">경상북도 구미시 수출대로3길 68-45 (공단동)</p>
+                    <p class="fw-bold">대표전화</p>
+                    <p class="mb-2 mb-md-3">054-461-9567~8</p>
+                    <p class="fw-bold">팩스</p>
+                    <p class="mb-2 mb-md-5">054-461-9568</p>
+                    <div>
+                        <button type="button" class="btn btn-primary" onclick="window.open('https://goo.gl/maps/xHy54A38R2umv3Qj6')">
+                            <i class="bi bi-geo-alt-fill"></i>구글 맵으로 확인
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div id="footer" class="footer container-fluid">
+        <div class="container-xxl text-center text-white p-3 p-md-5">
+            <img src="img/logo.png" width="60" height="40" class="mb-3" alt="" />
+            <p class="mb-3">경상북도 구미시 수출대로3길 68-45 (공단동) 경상북도 구미시 산호대로 116-27 (공단동)
+                대표번호: 054-461-9567~8
+                팩스: 054-461-9568 </p>
+            <p class="text-white-50">CopyrightⓒJCS MOLD co., Ltd all right reserved. </p>
+        </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        /* gsap */
+        gsap.registerPlugin(ScrollTrigger);
+
+        const sections = gsap.utils.toArray("section");
+        const footer = document.getElementById("footer");
+
+        sections.forEach((section, i) => {
+            const triggerElement = i === sections.length - 1 ? footer : section;
+
+            ScrollTrigger.create({
+                trigger: triggerElement,
+                start: "top top",
+                pin: true,
+                pinSpacing: false,
+                endTrigger: footer,
+                end: "bottom top",
+            });
+        });
+
+        /* bootstrap toggle */
+        document.addEventListener("DOMContentLoaded", function () {
+            var navbarToggler = document.querySelector(".navbar-toggler");
+            var navbarCollapse = document.querySelector("#navbarNav");
+            var navLinks = document.querySelectorAll(".scroll-link");
+
+            navbarToggler.addEventListener("click", function () {
+                navbarCollapse.classList.toggle("show");
+            });
+
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    navbarCollapse.classList.remove("show");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
