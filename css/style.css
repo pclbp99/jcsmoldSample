@@ -552,13 +552,8 @@ nav{
 }
 
 .visionBox .visionTit h6{
-    margin-bottom: 0.25rem;
     font-family: 'Pretendard-Medium';
     font-size: 1.2rem;
-}
-
-.visionBox .visionTit p{
-    font-size: 0.8rem;
 }
 
 .visionBox .visionSub {
