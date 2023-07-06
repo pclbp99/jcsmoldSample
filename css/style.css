@@ -125,6 +125,20 @@ input[type=text]:focus,input[type=password]:focus, textarea:focus,select:focus {
 }
 .placeholdersjs { color: #aaa !important; }
 
+::-webkit-scrollbar {
+    width: 0px;
+	height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+}
+
 .loader{
     position: fixed;
     top: 0; left: 0;
@@ -428,14 +442,14 @@ nav{
     margin-bottom: 1rem;
 }
 .graph div img{
-    width: 10px;
-    height: 80px;
+    width: 7px;
+    height: 56px;
     margin: 0 0.5rem;
 }
 
 .graph div:last-child img{
-    width: 10px;
-    height: 90px;
+    width: 7px;
+    height: 63px;
 }
 
 .graph div h3{
@@ -527,6 +541,14 @@ nav{
 
 .section06{
     background: #000;
+}
+
+.section06 .title h3{
+    font-size: 2rem;
+}
+
+.section06 .title p{
+    font-size: 1.2rem;
 }
 
 .visionFlex{
